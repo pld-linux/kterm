@@ -12,6 +12,7 @@ Release:	8
 License:	distributable
 Group:		X11/Applications
 Source0:	ftp://ftp.sunet.se/pub/X11/R6contrib/applications/%{name}-%{version}.tar.gz
+# Source0-md5:	9cc72841b50dfba92bce01dbbebf3039
 Source1:	%{name}.desktop
 Patch0:		%{name}-6.2.0-kbd.patch
 Patch1:		%{name}-6.2.0-glibc.patch
