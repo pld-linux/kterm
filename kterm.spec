@@ -27,7 +27,7 @@ You'll also need to have the X Window System installed.
 
 %build
 xmkmf
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
