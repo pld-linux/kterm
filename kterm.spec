@@ -75,10 +75,14 @@ xmkmf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Terminals,%{_mandir},%{_bindir},%{_libdir}}
 
 %{__make} install install.man \
 	DESTDIR=$RPM_BUILD_ROOT
+
+mv $RPM_BUILD_ROOT/usr/X11R6/man/* $RPM_BUILD_ROOT%{_mandir}
+mv $RPM_BUILD_ROOT/usr/X11R6/bin/* $RPM_BUILD_ROOT%{_bindir}
+mv $RPM_BUILD_ROOT/usr/X11R6/lib/* $RPM_BUILD_ROOT%{_libdir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Terminals/kterm.desktop
 
