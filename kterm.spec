@@ -19,8 +19,6 @@ Patch2:		%{name}-6.2.0-utmp98.patch
 BuildRequires:	utempter-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 The kterm package provides a terminal emulator for the Kanji Japanese
