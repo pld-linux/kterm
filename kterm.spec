@@ -9,7 +9,7 @@ Patch1: kterm-6.2.0-glibc.patch
 Patch2: kterm-6.2.0-utmp98.patch
 Copyright: distributable
 Group: User Interface/X
-Buildroot: /var/tmp/kterm-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires: /usr/sbin/utempter
 
 %description
