@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KTerm
+Comment=Kanji Terminal Emulator
+Comment[pl]=Emulator terminala Kanji
+Exec=kterm
+Terminal=0
+Icon=xterm.xpm
+Type=Application
+# vi: encoding=utf-8
