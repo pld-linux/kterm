@@ -17,9 +17,12 @@ Source1:	%{name}.desktop
 Patch0:		%{name}-6.2.0-kbd.patch
 Patch1:		%{name}-6.2.0-glibc.patch
 Patch2:		%{name}-6.2.0-utmp98.patch
+BuildRequires:	XFree86-devel
+BuildRequires:	ncurses-devel
 BuildRequires:	utempter-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
 
 %description
 The kterm package provides a terminal emulator for the Kanji Japanese
@@ -71,18 +74,18 @@ yerine Kanji karakter kümesini kullanýr.
 
 %build
 xmkmf
-%{__make}
+%{__make} \
+	CDEBUGFLAGS="%{rpmcflags} -fno-strength-reduce -fno-strict-aliasing"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Terminals,%{_mandir},%{_bindir},%{_libdir}}
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
 
 %{__make} install install.man \
-	DESTDIR=$RPM_BUILD_ROOT
-
-mv -f $RPM_BUILD_ROOT/usr/X11R6/man/* $RPM_BUILD_ROOT%{_mandir}
-mv -f $RPM_BUILD_ROOT/usr/X11R6/bin/* $RPM_BUILD_ROOT%{_bindir}
-mv -f $RPM_BUILD_ROOT/usr/X11R6/lib/* $RPM_BUILD_ROOT%{_libdir}
+	DESTDIR=$RPM_BUILD_ROOT \
+	BINDIR=%{_bindir} \
+	XAPPLOADDIR=%{_appdefsdir} \
+	MANDIR=%{_mandir}/man1
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Terminals/kterm.desktop
 
@@ -92,6 +95,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/kterm
-%{_libdir}/X11/app-defaults/KTerm
+%{_appdefsdir}/KTerm
 %{_mandir}/man1/kterm.1x*
 %{_applnkdir}/Terminals/kterm.desktop
