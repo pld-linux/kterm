@@ -79,7 +79,7 @@ xmkmf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install install.man \
 	DESTDIR=$RPM_BUILD_ROOT \
@@ -87,7 +87,7 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
 	XAPPLOADDIR=%{_appdefsdir} \
 	MANDIR=%{_mandir}/man1
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Terminals/kterm.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/kterm.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -97,4 +97,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kterm
 %{_appdefsdir}/KTerm
 %{_mandir}/man1/kterm.1x*
-%{_applnkdir}/Terminals/kterm.desktop
+%{_desktopdir}/kterm.desktop
