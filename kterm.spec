@@ -11,11 +11,6 @@ Version:	6.2.0
 Release:	8
 License:	distributable
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.sunet.se/pub/X11/R6contrib/applications/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-6.2.0-kbd.patch
