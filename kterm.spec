@@ -31,7 +31,7 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install install.man DESTDIR=$RPM_BUILD_ROOT
+%{__make} install install.man DESTDIR=$RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/etc/X11/wmconfig
 install -m 644 -o root -g root $RPM_SOURCE_DIR/kterm.wmconfig \
 	$RPM_BUILD_ROOT/etc/X11/wmconfig/kterm
