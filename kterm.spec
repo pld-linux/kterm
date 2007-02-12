@@ -1,11 +1,11 @@
 Summary:	A Kanji (Japanese character set) terminal emulator for X
-Summary(de):	Kterm (Kanji-Terminal-Emulator)
-Summary(es):	Kterm (Emulador de Terminal Kanji)
-Summary(fr):	Kterm (Émulateur de terminal Kanji)
-Summary(ja):	ÆüËÜ¸ì¤ÎÉ½¼¨¤¬²ÄÇ½¤Ê X ¾å¤Î¥¿¡¼¥ß¥Ê¥ë¥½¥Õ¥È¤Ç¤¹
-Summary(pl):	Emulator terminala Kanji (z japoñskimi znakami) dla X
-Summary(pt_BR):	Kterm (Emulador de Terminal Kanji)
-Summary(tr):	Kanji uçbirim öykünümcüsü
+Summary(de.UTF-8):   Kterm (Kanji-Terminal-Emulator)
+Summary(es.UTF-8):   Kterm (Emulador de Terminal Kanji)
+Summary(fr.UTF-8):   Kterm (Ã‰mulateur de terminal Kanji)
+Summary(ja.UTF-8):   æ—¥æœ¬èªã®è¡¨ç¤ºãŒå¯èƒ½ãª X ä¸Šã®ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã‚½ãƒ•ãƒˆã§ã™
+Summary(pl.UTF-8):   Emulator terminala Kanji (z japoÅ„skimi znakami) dla X
+Summary(pt_BR.UTF-8):   Kterm (Emulador de Terminal Kanji)
+Summary(tr.UTF-8):   Kanji uÃ§birim Ã¶ykÃ¼nÃ¼mcÃ¼sÃ¼
 Name:		kterm
 Version:	6.2.0
 Release:	8
@@ -31,40 +31,40 @@ character set.
 Install kterm if you need a Kanji character set terminal emulator.
 You'll also need to have the X Window System installed.
 
-%description -l de
+%description -l de.UTF-8
 kterm ist der Kanji-Terminal-Emulator. Statt des normalen englischen
 Zeichensatzes arbeitet er mit dem japanischen Kanji-System.
 
-%description -l es
+%description -l es.UTF-8
 kterm es el Emulador de Terminal Kanji. Usa el conjunto de caracteres
-Kanji en lugar del conjunto normal de inglés para aquellos que
+Kanji en lugar del conjunto normal de inglÃ©s para aquellos que
 prefieran Kanji.
 
-%description -l fr
-kterm est l'émulateur de terminal Kanji. Il utilise les caractères
-Kanji à la place des caractères français normaux.
+%description -l fr.UTF-8
+kterm est l'Ã©mulateur de terminal Kanji. Il utilise les caractÃ¨res
+Kanji Ã  la place des caractÃ¨res franÃ§ais normaux.
 
-%description -l ja
-ÆüËÜ¸ì¤ÎÉ½¼¨¤¬²ÄÇ½¤Ê X ¾å¤Î¥¿¡¼¥ß¥Ê¥ë¥½¥Õ¥È¤Ç¤¹. X ¤ÎÉ¸½à¥¿¡¼¥ß¥Ê¥ë¥½
-¥Õ¥È xterm ¤ËÆüËÜ¸ì¤ò¼è¤ê°·¤¦µ¡Ç½¤¬ÉÕ²Ã¤µ¤ì¤Æ¤¤¤Ş¤¹. xterm ¤Î¾å°Ì¸ß´¹
-¤È¤Ê¤Ã¤Æ¤ª¤ê, ¥ª¥×¥·¥ç¥ó¤ÎÀßÄê¤äÁàºîÊıË¡¤Ï xterm ¤È¤Û¤È¤ó¤ÉÆ±¤¸¤Ç¤¹.
-¤³¤Î¥Ñ¥Ã¥±¡¼¥¸¤Ë¤Ï xterm ¥»¥­¥å¥ê¥Æ¥£¡¼¥Ñ¥Ã¥Á¤È16 ¿§¥Ñ¥Ã¥Á¤¬Åö¤¿¤Ã¤Æ¤¤
-¤Ş¤¹.
+%description -l ja.UTF-8
+æ—¥æœ¬èªã®è¡¨ç¤ºãŒå¯èƒ½ãª X ä¸Šã®ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã‚½ãƒ•ãƒˆã§ã™. X ã®æ¨™æº–ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã‚½
+ãƒ•ãƒˆ xterm ã«æ—¥æœ¬èªã‚’å–ã‚Šæ‰±ã†æ©Ÿèƒ½ãŒä»˜åŠ ã•ã‚Œã¦ã„ã¾ã™. xterm ã®ä¸Šä½äº’æ›
+ã¨ãªã£ã¦ãŠã‚Š, ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®è¨­å®šã‚„æ“ä½œæ–¹æ³•ã¯ xterm ã¨ã»ã¨ã‚“ã©åŒã˜ã§ã™.
+ã“ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã«ã¯ xterm ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ãƒ¼ãƒ‘ãƒƒãƒã¨16 è‰²ãƒ‘ãƒƒãƒãŒå½“ãŸã£ã¦ã„
+ã¾ã™.
 
-¥É¥­¥å¥á¥ó¥È¤Ï man kterm ¤ª¤è¤Ó man xterm ¤ò»²¹Í¤Ë¤·¤Æ¤¯¤À¤µ¤¤.
+ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã¯ man kterm ãŠã‚ˆã³ man xterm ã‚’å‚è€ƒã«ã—ã¦ãã ã•ã„.
 
-%description -l pl
-Pakiet kterm zawiera emulator terminala z japoñskim zestawem znaków
+%description -l pl.UTF-8
+Pakiet kterm zawiera emulator terminala z japoÅ„skim zestawem znakÃ³w
 Kanji.
 
-%description -l pt_BR
-kterm é o Emulador de Terminal Kanji. Ele usa o conjunto de caracteres
-Kanji ao invés do conjunto normal de inglês para aqueles que preferem
+%description -l pt_BR.UTF-8
+kterm Ã© o Emulador de Terminal Kanji. Ele usa o conjunto de caracteres
+Kanji ao invÃ©s do conjunto normal de inglÃªs para aqueles que preferem
 Kanji.
 
-%description -l tr
-kterm, Kanji uçbirim öykünümcüsüdür. Normal İngilizce karakter kümesi
-yerine Kanji karakter kümesini kullanır.
+%description -l tr.UTF-8
+kterm, Kanji uÃ§birim Ã¶ykÃ¼nÃ¼mcÃ¼sÃ¼dÃ¼r. Normal Ä°ngilizce karakter kÃ¼mesi
+yerine Kanji karakter kÃ¼mesini kullanÄ±r.
 
 %prep
 %setup -q
