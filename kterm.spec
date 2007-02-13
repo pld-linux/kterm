@@ -1,11 +1,11 @@
 Summary:	A Kanji (Japanese character set) terminal emulator for X
-Summary(de.UTF-8):   Kterm (Kanji-Terminal-Emulator)
-Summary(es.UTF-8):   Kterm (Emulador de Terminal Kanji)
-Summary(fr.UTF-8):   Kterm (Émulateur de terminal Kanji)
-Summary(ja.UTF-8):   日本語の表示が可能な X 上のターミナルソフトです
-Summary(pl.UTF-8):   Emulator terminala Kanji (z japońskimi znakami) dla X
-Summary(pt_BR.UTF-8):   Kterm (Emulador de Terminal Kanji)
-Summary(tr.UTF-8):   Kanji uçbirim öykünümcüsü
+Summary(de.UTF-8):	Kterm (Kanji-Terminal-Emulator)
+Summary(es.UTF-8):	Kterm (Emulador de Terminal Kanji)
+Summary(fr.UTF-8):	Kterm (Émulateur de terminal Kanji)
+Summary(ja.UTF-8):	日本語の表示が可能な X 上のターミナルソフトです
+Summary(pl.UTF-8):	Emulator terminala Kanji (z japońskimi znakami) dla X
+Summary(pt_BR.UTF-8):	Kterm (Emulador de Terminal Kanji)
+Summary(tr.UTF-8):	Kanji uçbirim öykünümcüsü
 Name:		kterm
 Version:	6.2.0
 Release:	8
