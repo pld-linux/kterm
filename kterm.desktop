@@ -1,11 +1,10 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=KTerm
 Comment=Kanji Terminal Emulator
 Comment[pl]=Emulator terminala Kanji
 Exec=kterm
 Terminal=false
-Icon=xterm.xpm
+Icon=xterm
 Type=Application
 Categories=TerminalEmulator;
 # vi: encoding=utf-8
